@@ -79,6 +79,8 @@ def diagonal_units():
     """
     Get the diagonal units
     """
+    rows = 'ABCDEFGHI'
+    cols = '123456789'
     diagonal1 = [a[0]+a[1] for a in zip(rows, cols)]
     diagonal2 = [a[0]+a[1] for a in zip(rows, cols[::-1])]
     return [diagonal1, diagonal2]
